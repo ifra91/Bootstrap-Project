@@ -1,0 +1,471 @@
+/*Short hand property margin and padding  TRBL (top, right, bottom, left) (All Sides) (top, L&R, bottom) (top&Bottom , Left&Right)*/
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+:root{
+    --bs-dark-color: #051923;
+    --bs-dark-primary: #0E1C36;
+    --bs-main-color:#F9FBF2;
+    --bs-primary-color:#e3eff1;
+    --secondary-color:#d48f61;
+    --bs-supporting-color: #AFCBFF;
+
+}
+h1,h2,h3,h4,h5{
+    font-family: system-ui, sans-serif;
+    color: var( --bs-dark-color);
+}
+h1{
+    font-size:3.4rem;
+}
+h2{
+    line-height: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--bs-dark-color);
+    letter-spacing:0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+ a{
+    text-decoration: none;
+ }
+ li{
+    list-style: none;
+ }
+ .bg-color{
+    background-color: var(--bs-dark-primary);
+ }
+ .text-white{
+    color: var(--bs-primary-color)
+ }
+ button, a{
+    font-size: 1.15rem!important;
+    letter-spacing: 0.03rem;
+    word-spacing: .1rem;
+ }
+ .common-heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem!important;
+ }
+ .common-section{
+    margin-bottom:2rem;
+    padding: 2rem 0 2rem 0;
+}
+ .common-title{
+    margin-bottom: 4.2rem;
+ }
+
+ .bg-theme{
+    color: var(--bs-supporting-color);
+ }
+
+ @media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+  h1,h2,h3,h4,h5{
+    font-family: "Lato", sans-serif;
+    color: var( --bs-dark-color);
+}
+h1{
+    font-size:2rem;
+}
+h2{
+    line-height: 2.8rem;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+}
+
+
+
+ /*Nav Header*/
+ .drawer-body{
+    justify-content: end;
+ }
+ .nav-item{
+    margin: 0.5rem;
+ }
+ .nav-link{
+    color: var(--bs-main-color);
+    font-weight:bold;
+ }
+ .nav-link:hover{
+    color:var(--secondary-color);
+ }
+
+  @media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+   .nav-link{
+    color: var(--bs-dark-primary);
+    font-weight:bold;
+ }
+ .nav-link:active{
+    color:black;
+ }
+ .btn-icon{
+    color:var(--bs-supporting-color);
+ }
+}
+
+ /* hero section start*/
+ .hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit;
+ }
+ .bg-main{
+    height:100vh;
+    position:relative;
+ }
+ .hero-img-section{
+    place-content: center;
+ }
+ /* .hero-img-section .hero-img div{
+    max-width: 100%;
+    height: 100%;
+    width:60%;
+    border-radius: 2rem;
+    position: inherit;
+    padding: auto;
+ } */
+.text-light-gray{
+    color:var(--bs-primary-color);
+}
+.para-width{
+    max-width:100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.btn-primary{
+    background-color: var(--secondary-color);
+    width:10rem;
+    height:1rem;
+}
+.custom-tooltip{
+    --bs-tooltip-bg: var(--bs-primary-color);
+    --bs-tooltip-color: var(--bs-dark-color);
+    font-weight:bold;
+    width: 8rem;
+}
+.text-section{
+    padding: 3.38rem;
+}
+
+  @media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+    .hero-img-section img{
+        margin-left: 3.5rem;
+        margin-top: 4rem;
+    }
+}
+
+
+
+/*Shape Divider*/
+.custom-shape-divider-bottom-1792242807 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1792242807 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 2.3rem);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+.custom-shape-divider-bottom-1792242807 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*Services Section*/
+.services-section{
+    padding: 6rem 0 3rem 0!important;
+    place-items: center;
+}
+hr{
+    text-align: center;
+}
+
+.icon-span{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--bs-main-color);
+
+}
+.card-box{
+    padding:2rem;
+    margin:1rem;
+    width: auto;
+}
+.card-box p{
+    margin:3rem;
+}
+.card-box:hover{
+    box-shadow: rgba(202, 212, 228, 0.742) 1px 2px 8px 8px;
+}
+@media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+  .card-box p{
+    margin: 1rem;
+  }
+}
+
+/*Digital Product Section*/
+.more-info-section{
+    background-image:linear-gradient( to bottom, rgba(0, 0, 0, 0.904),rgba(8, 8, 8, 0.6)), url(images/CoverImage1.png);
+    background-attachment: fixed; /*gives parallax effect*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+    overflow: hidden;
+    height: 120vh;
+}
+.more-info-section .img-section{
+    position: relative;
+}
+.img-section iframe{
+    /* width:40vw;
+    height:70vh; */
+    /* height: auto; */
+    border-radius: 2rem;
+    padding: auto;
+    position: relative;
+}
+.text-product p{
+    font-size:small;
+    line-height: 1rem;
+    word-spacing: 0.3rem;
+    padding: 1rem 0 2rem 0;
+}
+.text-product{
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+  .more-info-section .container .row .text-product h1{
+    margin: 0.05vw;
+    font-size: 2rem;
+  }
+
+  .more-info-section{
+    height:fit-content;
+  }
+}
+
+/*online mode section*/
+.business-section{
+    padding-top: 2rem;
+}
+.content-heading{
+    margin: 0.5rem 0.5rem 0;
+}
+.online-mode-grid{
+    padding-left: 7.5rem;
+}
+.online-mode-grid .row .col-12{
+    margin: 0 0.5rem 0.5rem 1rem;
+}
+.shadow{
+    box-shadow: #a39c9c 0 2px 8px;
+}
+.shadow img{
+    margin: 0.5rem;
+    width: 20%;
+}
+.olm-text-container{
+    font-weight: 200;
+    font-size:smaller;
+    letter-spacing:0rem;
+    line-height: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+  .online-mode-grid{
+    margin-left: 0;
+    padding-left: 0;
+}
+.online-mode-grid .row .col-12{
+    margin: 0 0 1rem 0;
+}
+}
+
+/*carousel styling*/
+.card-body{
+    padding:2rem;
+}
+.card{
+    background-color: rgba(95, 98, 101, 0.502);
+    transition: all 0.3s linear;
+}
+.carousel .card p, .card-title{
+    color:var(--bs-main-color);
+}
+.carousel .card:hover{
+    background-color: var(--bs-main-color);
+    color: var(--bs-dark-color);
+}
+.carousel .card:hover p{
+    color:var(--bs-dark-color);
+}
+.carousel .card:hover .card-title{
+    color:var(--bs-dark-color);
+}
+.fa-star{
+    color:var(--bs-supporting-color);
+}
+.carousel-overlay .carousel-overlay-controls{
+    inset-block-end: 15rem;
+    inset-inline: 5rem;
+}
+.carousel-indicators [data-bs-target]{
+    height: .7rem;
+    background-color: var(--secondary-color);
+}
+.carousel-item{
+    padding: 0rem 5rem;
+    place-content: center;
+    place-items:center;
+}
+.container .row .card-col-grid{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+    .card{
+        padding:0;
+        margin:0;
+    }
+    .card p{
+        font-size:xx-small;
+    }
+    .carousel-overlay-controls{
+        display: none;
+    }
+}
+
+/*Expert section styling*/
+.text-gray{
+    color: var(--bs-supporting-color);
+}
+.text-dark{
+    color: var(--bs-dark-primary);
+}
+
+/*Shape divider*/
+.contact-section{
+    position:relative;
+}
+
+.custom-shape-divider-top-1792573676 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1792573676 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-top-1792573676 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*Contact section styling*/
+.contact-section .common-title{
+    padding-top: 6rem;
+}
+form{
+    display: flex; 
+    justify-content: center;
+}
+.form-container{
+    padding: 1.5rem;
+    width: 35%;   
+}
+.message-container{
+    width: 67.5vw;
+}
+.form-button{
+    margin: 6vh 0 0 32vw;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+  .contact-section .form .input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width:70vw;
+  }
+
+  .custom-shape{
+    display:none;
+  }
+}
+
+/*footer*/
+.contact-details{
+    margin: 0 0 2rem 0;
+    padding-top: 5rem;
+}
+.contact-details img{
+    width: 30%;
+}
+.contact-div p{
+    font-size: smaller;
+}
+.subscribe .container
+{
+   padding:0 0 4rem 0;
+}
+.input-group{
+    width: 30rem;
+    place-content:center;
+    margin: 4rem 0 0 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules here apply to screens 768px wide or smaller */
+  .input-group{
+    width:70vw;
+    margin: 0 0 0 2rem;
+  }
+  .subscribe .container{
+    padding: 0;
+    margin: 0;
+    }
+}
